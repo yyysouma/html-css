@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.container {
+    width: 400px;
+    height: 450px;
+}
+
+.red-box {
+    height: 100px;
+    width: 400px;
+    background-color: #ff0000;
+    float: left;
+}
+
+.middle-container {
+    float: left;
+}
+
+.green-box {
+    width: 150px;
+    height: 250px;
+    float: left;
+    background-color: #00ff51;
+}
+
+.purple-box {
+    height: 50px;
+    width: 150px;
+    float: left;
+    background-color: #cc00db;
+}
+
+.sea-box {
+    height: 100px;
+    width: 150px;
+    background-color: #0093b7;
+    float: left;
+}
+
+.brown-box {
+    height: 100px;
+    width: 250px;
+    background-color: #8c2727;
+    float: left;
+}
+
+.orange-box {
+    width: 100px;
+    height: 150px;
+    background-color: #ff9e6b;
+    float: right;
+}
+
+.yellow-box {
+    height: 100px;
+    width: 400px;
+    background-color: #fff700;
+    float: left;
+}
