@@ -1,0 +1,14 @@
+●DOMとは
+	Document Object Modelのこと
+	ブラウザがHTMLを読み込んだ際にデータ構造が内部で作成されること
+	をDOMという。
+
+	HTMLをツリー上に分解し、HTMLとJavaScriptを接続する。
+
+●ノードとは
+	Documentの下にあるツリーのHTMLに当たる部分を親ノードとして、
+	その直下が子ノード
+	複数列同等の階層にある子ノードを兄弟ノードと呼ぶ
+
+●DOMの操作とは
+	DOMを操作してJavaScriptからHTMLに変更を加えることができる
