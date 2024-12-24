@@ -1,6 +1,7 @@
 //変数の中にtrueまたは、falseが代入された時の処理を作ってください。
-const true = 
-const result = 3 >= 2 ? true : false;
+const result = true; 
+const result2 = 3 >= 2 ? true : false;
+console.log(result);
 
 //代入された変数の中が5より大きい時にtrueの処理と、5より小さい時にfalseの処理を作ってください。
 const age = 6;
