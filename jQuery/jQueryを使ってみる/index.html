@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQueryを使ってみる</title>
+    <script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+
+</head>
+<body>
+        <button id="sample">jQuery</button>
+    <script>
+    $(function () {
+    $("#sample").on('click', function () {
+    const result = "ボタンが押されました!";
+    console.log(result);
+    });
+    });
+    </script>
+    <!--上記の説明で.on('click', function () {});と書きましたが、
+.onの部分を.clickと書いても同じ実行結果となります。
+.click(function () {});
+なぜ上記の書き方で書かなかったのか調べて自分なりの言葉にしてまとめてください。
+
+可読性、利便性を考えての.onだったのかと
+
+･･･.onと.clickメソッドの違い
+    .on：対象となる要素にイベント名や関数を指定することで、
+    イベント処理を実現できます。
+    対象要素.on(イベント名, セレクタ, データ, 関数)
+
+    .onからclickを指定
+    $('button').on('click', function(){
+   console.log('on');
+ });
+    .on('click')メソッドを使うとページが読み込まれた後に追加された
+    要素にもクリックイベントを設定できる。
+
+    .clickからイベントを実装
+    $('button').click(function(){
+    console.log('ボタン押しました');
+  });
+    .clickは最初から存在していたHTML要素と紐づく特性があり、その
+    要素のみイベントが関連付けられる
+
+
+    結論
+    .clickだと後々追加するボタンを押すイベントは紐づけされないため
+    二度手間、ややこしいコードになってしまう。
+    .onで始める方法だと後で追加された要素も反映されるため、後々の
+    修正等、利便性を考えるなら.onから始めるイベントが望ましい。
+-->
+</body>
+</html>
