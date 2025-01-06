@@ -1,6 +1,6 @@
 //1.変数にtrueを代入し、ifの条件がtrueの時にconsole.log();で変数の中身を表示させる処理を作ってください。
 var test = true;
-if (true == true){
+if (test == true){
     console.log(test);
 }
 
