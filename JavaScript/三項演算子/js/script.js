@@ -19,6 +19,6 @@ const age6 = age5 >= 10 ? 'trueの処理' : 'falseの処理';
 console.log(age6);
 
 //代入された変数の中に値が存在する場合はtrue、存在しない場合はfalseの処理にしてください。
-const age7 = 1;
-const age8 = !age7 == "" ? 'trueの処理' : 'falseの処理';
+const age7 = null;
+const age8 = age7 ? 'trueの処理' : 'falseの処理';
 console.log(age8);
