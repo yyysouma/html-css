@@ -9,4 +9,4 @@
 .snake_case
 
 //キャメルケースを使用した変数名を書いてください。
-const = camelCase
+const camelCase = 'ラクダのこぶ';
