@@ -5,11 +5,10 @@ function showAlert() {
     showAlert();
 
 //関数式内で計算した結果を返し、それを外部から実行してコンソールで表示させてください。
-const getText = function () {
-    const text = "getTextが実行されるとこのテキストを返します";
-    console.log(text);
+function profile(name){
+    return 'わたしは' + name + 'です。'
 };
-    console.log(getText());
+    console.log(profile('相馬'));
 
 
 /*
