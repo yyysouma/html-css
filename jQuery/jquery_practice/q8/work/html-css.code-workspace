@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../html/html-css"
+		},
+		{
+			"path": "../../../js"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "js",
+		"git.ignoreLimitWarning": true
+	}
+}
