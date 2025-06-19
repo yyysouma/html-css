@@ -26,6 +26,7 @@ $(function (){
 
     $('#q5').on('click', function(){
         $(this).prepend('<span>DOMの前</span>').append('<span>DOMの後</span>').before('<span>DOMの前</span>').after('<span>DOMの後</span>')
+        //id=q5をクリックするとその要素内の前と後、id=q5のbutton要素の前と後ろにspanタグのテキストを追加
     });
 
     $('#q6').on('click', function(){
@@ -33,10 +34,12 @@ $(function (){
             'margin-left': '100px',
             'margin-top': '100px'
         },2000);
+        //id=q6の要素をクリックすると2秒かけてmarginのcssスタイルを追加した後の位置へ動く
     });
 
     $('#q7').on('click', function(){
         console.log('#q7')
+        //id=q7をクリックしてコンソール表示
     });
 
     $('#q8').on('mouseover', function(){
@@ -44,17 +47,19 @@ $(function (){
             .on('mouseout', function(){
         $(this).removeClass('large')
         });
+        //id=q8要素内にマウスカーソルを置くとlargeクラスを付加。要素から外れるとlargeクラスを削除
     });
 
     $('#q9 > li').on('click', function(){
         const q9Index = $(this).index();
         alert(q9Index)
-        
+        //q9の子要素liタグをクリックするとliタグの配列番号を取得しalertのテキストに渡す    
     });
 
     $('#q10 > li').on('click', function(){
         const $q10s = $(this).index();
         $('#q11 > li').eq($q10s).addClass('large-text');
+        //q10の子要素liをクリックするとq10の取得した配列番号と同一のid=q11の子要素liを選択してクラスを付与
     });
     
 });
